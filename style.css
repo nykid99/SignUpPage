@@ -1,32 +1,110 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+@font-face{
+    font-family:'Klaudia';
+    src: url(fonts/Klaudia-a855.ttf);
+}
+@font-face{
+    font-family:'ModernBuilding';
+    src: url(fonts/ModernBuilding-E1aj.ttf);
+}
 main{
+    font-family:'Klaudia';
     display:flex;
 }
-.leftImage{
+.leftContent{
     display:flex;
     justify-content: end;;
     color: white;
     width: 40vw;
     height: 100vh;
-    /* border:2px red solid; */
     background-image:url("images/tim-rebkavets-B5PNmw5XSpk-unsplash.jpg");
     background-size:cover;
     background-repeat:no-repeat;
 }
-.logoImage{
-    
-    width:20rem;
-}
 .rightContent{
     width:60vw;
-    background-color: rgb(15, 25, 27);
+    height:100vh;
+    background-color:#404d49;
 }
-.logoDiv{
-    
+.logoDiv{ 
     background-image:url("images/logo.png");
     background-size:cover;
     background-repeat:no-repeat;
-    width:23rem;
-    height:23rem;
+    width:34vh;
+    height:34vh;
     border-bottom-left-radius: 3rem;
 }
+.rightHeader{
+    background-color:#97957c;
+    height:34vh;
+    
+}
+.middleForms{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color:#dac5b4;
+    height:35vh;
+}
+.middleFormHeader{
+    padding-left:2rem;
+    margin-top:2rem;
+    margin-bottom:1rem;
+    display:flex;
+    align-items:center;
+    height:7vh;
+    /* border:2px solid red; */
+    font-size:2.5rem; 
+}
+.MiddleFormFields{
+    padding-left:2rem;
+    height: 15rem;
+    column-gap: 10px;
+    display:grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 4rem 4rem 4rem 4rem;
+
+}
+input[type = text]{
+    height: 30px;
+    border-radius: 0.3rem;
+}
+input[type = password]{
+    height: 30px;
+    border-radius: 0.3rem;
+}
+
+p{
+    height:fit-content;
+    display:flex;
+    flex-direction: column;
+}
+.bottomForms{
+    background-color:#97957c;
+    height:31vh;
+    display:flex;
+    flex-direction:column;
+}
+.bottomFormContainer{
+    height:10em;
+    margin: 2rem 0px 0px 2.5rem;
+}
+#createAccountBtn{
+    font-family:'Klaudia';
+    font-size:larger;
+    background-color:#404d49;
+    color:antiquewhite;
+    width:300px;
+    height: 50px;
+    border-radius:0.3rem;
+    border:0px ;
+}
+#ALACArea{
+    margin-top: 2rem;
+}
+
