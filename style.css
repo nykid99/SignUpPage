@@ -1,0 +1,32 @@
+
+main{
+    display:flex;
+}
+.leftImage{
+    display:flex;
+    justify-content: end;;
+    color: white;
+    width: 40vw;
+    height: 100vh;
+    /* border:2px red solid; */
+    background-image:url("images/tim-rebkavets-B5PNmw5XSpk-unsplash.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.logoImage{
+    
+    width:20rem;
+}
+.rightContent{
+    width:60vw;
+    background-color: rgb(15, 25, 27);
+}
+.logoDiv{
+    
+    background-image:url("images/logo.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:23rem;
+    height:23rem;
+    border-bottom-left-radius: 3rem;
+}
