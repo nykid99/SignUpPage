@@ -8,12 +8,13 @@
     font-family:'Klaudia';
     src: url(fonts/Klaudia-a855.ttf);
 }
-@font-face{
+/* @font-face{
     font-family:'ModernBuilding';
     src: url(fonts/ModernBuilding-E1aj.ttf);
-}
+} */
 main{
     font-family:'Klaudia';
+    /* font-family:Helvetica; */
     display:flex;
 }
 .leftContent{
@@ -40,26 +41,51 @@ main{
     border-bottom-left-radius: 3rem;
 }
 .rightHeader{
+    box-shadow: inset 0 0 10px #727170;
+    display: flex;
+    /* background-color:#404d49; */
+    background-color:#666553;
     background-color:#97957c;
     height:34vh;
     
 }
+p {
+    white-space: pre;
+  }
+.rightHeaderText{
+    
+    position:absolute;
+    display:flex;
+    height: 14rem;
+    /* border: 2px solid red; */
+    color: rgb(26, 26, 26);
+    font-size:1.7rem;
+    margin-top:6rem;
+    margin-left:2rem;
+    
+    /* border: 2px solid red; */
+}
 .middleForms{
+    font-family:sans-serif;
+    box-shadow: inset 0 0 10px #727170;
     display:flex;
     flex-direction: column;
     justify-content:center;
-    background-color:#dac5b4;
+    /* background-color:#dac5b4; */
+    background-color:#c2a893;
+    
     height:35vh;
 }
 .middleFormHeader{
+    /* color: rgb(59, 59, 59); */
+    color: rgb(39, 39, 39);
     padding-left:2rem;
     margin-top:2rem;
     margin-bottom:1rem;
     display:flex;
     align-items:center;
     height:7vh;
-    /* border:2px solid red; */
-    font-size:2.5rem; 
+    font-size:2.3em; 
 }
 .MiddleFormFields{
     padding-left:2rem;
@@ -71,12 +97,19 @@ main{
 
 }
 input[type = text]{
+    border:0px;
+    box-shadow: 5px 5px 5px grey;
     height: 30px;
     border-radius: 0.3rem;
 }
 input[type = password]{
+    border:0px;
+    box-shadow: 5px 5px 5px grey;
     height: 30px;
     border-radius: 0.3rem;
+}
+label{
+    font-weight:600;
 }
 
 p{
@@ -85,6 +118,8 @@ p{
     flex-direction: column;
 }
 .bottomForms{
+    box-shadow: inset 0px 0px 2px #727170;
+    background-color:#666553;
     background-color:#97957c;
     height:31vh;
     display:flex;
@@ -95,6 +130,7 @@ p{
     margin: 2rem 0px 0px 2.5rem;
 }
 #createAccountBtn{
+    
     font-family:'Klaudia';
     font-size:larger;
     background-color:#404d49;
@@ -103,6 +139,13 @@ p{
     height: 50px;
     border-radius:0.3rem;
     border:0px ;
+}
+#createAccountBtn:hover{
+    
+    background-color: rgb(255, 228, 78);
+    transition-delay:1.3s;
+    transition: all 0.3s ease 0s;
+    color: black
 }
 #ALACArea{
     margin-top: 2rem;

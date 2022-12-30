@@ -15,18 +15,21 @@
         <div class = "rightContent">
             <div class = "rightHeader">
                 <div class = "rightHeaderText">
-                    This is not a real online Service! You know you need something like this onyour
-                    life to help you realize your deepest dreams. Sign up now to get started.
+                    <p>This is not a real online Service! You know you need something 
+like this on your life to help you realize your deepest dreams. 
+Sign up now to get started.
 
-                    You Know you want to
+You Know you want to
+</p>
+                    
                 </div>
             </div>
-            <div class = middleForms >
+            <form action="#" id = "signup-form"class = middleForms >
                 <div class = "middleFormHeader">Let's Do this!</div>
                 <div class = "MiddleFormFields">
                     <p>
                         <label> First Name</label>
-                        <input type = "text">
+                        <input type = "text" placeholder="65251" required>
                     </p>
                     <p>
                         <label> Last Name</label> 
@@ -50,10 +53,10 @@
                     </p>
 
                 </div>
-            </div>
+            </form>
             <div class = "bottomForms">
                 <div class= "bottomFormContainer">
-                    <button id = "createAccountBtn">Create Account</button>
+                    <button type = "submit" form = "signup-form" id = "createAccountBtn">Create Account</button>
                     <div id = "ALACArea">Already Have an account? Log in</div>
                 </div>
 
